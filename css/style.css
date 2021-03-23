@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato:wght@400;700;900&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+/*
+font-family: 'Gentium Book Basic', serif;
+
+font-family: 'Lato', sans-serif;
+
+font-family: 'Yeseva One', cursive;
+*/
+
+
+
+/*=====MENU START=====*/
+.main_menu{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand img {
+	width: 100%;
+}
+
+.main_menu .nav-item{
+    
+}
+
+.main_menu .nav-item .nav-link {
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 20px;
+	color: #fff;
+	text-transform: capitalize;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	line-height: 47px;
+    position: relative;
+}
+
+.main_menu .nav-item .nav-link::after {
+	position: absolute;
+	content: "";
+	background: #fff;
+	width: 70%;
+	height: 2px;
+	bottom: 15px;
+	left: 15%;
+	transform: scale(0);
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+}
+
+.main_menu .nav-item .nav-link:hover::after{
+        transform: scale(1);
+}
+
+.menu_fix {
+	background: #cc9900;
+	top: 0;
+	left: 0;
+	position: fixed;
+	animation: menu_animate 1s;
+	z-index: 999;
+}
+
+@keyframes menu_animate {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.menu_fix .navbar-brand img {
+	width: 90px;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.active::after {
+	transform: scale(1);
+}
+/*=====MENU END=====*/
+
+
+
+
+/*=====BANNER START=====*/
+#banner{
+    background: url(../images/banner_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner_overlay{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner_text {
+	margin-top: 180px;
+	margin-bottom: 140px;
+}
+
+.banner_text h1 {
+	font-family: 'Yeseva One', cursive;
+	color: #fff;
+	font-size: 60px;
+}
+
+.shape {
+	width: 230px;
+	margin: 30px 0px;
+}
+
+.banner_button{
+    
+}
+
+.banner_button a {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	background: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 10px 30px;
+	border: 1px solid #000;
+	margin: 0px 12px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+}
+
+.banner_button a:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+}
+
+/*=====BANNER END=====*/
+
+
+
+/*=====RIGHT FOOD START=====*/
+#right_food{
+    padding: 70px 0px 40px 0px;
+    background: url(../images/bg_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.r_food_text{
+    
+}
+
+.r_food_text h4 {
+	font-size: 36px;
+	color: #cc9900;
+	font-family: 'Yeseva One', cursive;
+	margin-top: 13px;
+}
+
+.r_food_text p {
+	margin-top: 6px;
+	margin-bottom: 50px;
+	color: #4c4c4c;
+	font-family: 'Lato', sans-serif;
+}
+
+.shape-2 {
+	width: 230px;
+	margin: 15px;
+}
+
+.r_food_text .man {
+	width: 200px;
+}
+
+/*=====RIGHT FOOD END=====*/
+
+
+
+
+/*=====FINE FOOD START=====*/
+#fine{
+    padding: 90px 0px;
+    background: url(../images/bg_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fine_details {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 60px 70px 70px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.fine_details h4{
+	font-size: 36px;
+	color: #fff;
+	font-family: 'Yeseva One', cursive;
+}
+
+.fine_details p {
+	font-size: 16px;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	margin-top: 6px;
+	margin-bottom: 65px;
+}
+
+.fine_details ul li{
+    float: left;
+    margin-right: 30px;
+}
+
+.fine_details ul li:last-child{
+    margin-right: 0;
+}
+
+
+/*=====FINE FOOD END=====*/
+
+
+/*=====PRICE START=====*/
+#price{
+    padding: 90px 0px;
+    background: url(../images/bg_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.price_text {
+	padding: 0px 35px;
+}
+
+.price_deading.text-center h4 {
+	color: #cc9900;
+	font-size: 36px;
+	font-family: 'Yeseva One', cursive;
+}
+
+.price_item {
+	margin-top: 28px;
+}
+
+.price_item .top{
+    font-size: 21px;
+    color: #c89f2d;
+	font-family: 'Yeseva One', cursive;
+}
+
+.price_item .top span {
+	float: right;
+}
+
+.price_item img {
+	margin-top: -17px;
+}
+
+.price_item .bottom {
+	font-size: 14px;
+	color: #4c4c4c;
+	font-family: 'Yeseva One', cursive;
+	font-weight: 400;
+	margin-top: -9px;
+}
+
+.price_mar {
+	margin-top: 65px;
+}
+/*=====PRICE END=====*/
+
+
+
+
+
+
+
+/*=====REVIEW START=====*/
+#review{
+    padding: 90px 0px;
+    background: url(../images/bg_4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rev_text {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 60px 60px 70px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.rev_text h4{
+	font-size: 36px;
+	color: #fff;
+	font-family: 'Yeseva One', cursive;
+}
+
+.rev_text p {
+	font-size: 16px;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	margin-top: 6px;
+	margin-bottom: 35px;
+	line-height: 30px;
+}
+
+.rev_text span {
+	color: #fff;
+	font-size: 14px;
+}
+
+/*=====REVIEW END=====*/
+
+
+
+
+/*=====CONTACT START=====*/
+#contact{
+    padding: 90px 0px;
+    background: url(../images/bg_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.con_top{
+    
+}
+
+.con_top h4{
+    font-size: 36px;
+    color: #cc9900;
+	font-family: 'Yeseva One', cursive;
+}
+
+.con_top .shape-2 {
+	width: 230px;
+	margin: 15px;
+	margin-top: 8px;
+}
+
+
+.con_top p {
+	font-size: 16px;
+	color: #4c4c4c;
+	font-family: 'Lato', sans-serif;
+	margin-top: 5px;
+}
+
+.con_top p span{
+    display: block;
+    margin-top: 15px;
+}
+
+.form_text {
+	margin-top: 17px;
+}
+
+.form_text label {
+	text-transform: capitalize;
+	color: #c9a131;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.form_text input {
+	text-transform: lowercase;
+	font-style: italic;
+	font-size: 16px;
+	color: #7c7c7c;
+	padding: 8px 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+.nice-select {
+	width: 100%;
+	color: #7c7c7c;
+	font-style: italic;
+	font-size: 16px;
+	border-radius: 0;
+	border: 1px solid #ccc;
+}
+
+.book_btn {
+	background: #C9A131;
+	padding: 8px 40px;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+}
+
+.book_btn:hover {
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+/*=====CONTACT END=====*/
+
+
+
+
+
+/*=====FOOTER START=====*/
+footer {
+	padding-top: 90px;
+	background: #191919;
+	overflow: hidden;
+}
+
+.footer_text {
+	overflow: hidden;
+}
+
+.footer_text h5 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 21px;
+}
+
+.footer_text p {
+	font-family: 'Lato', sans-serif;
+}
+
+.payment {
+	margin: 0 auto;
+	width: 70%;
+	margin-top: 40px;
+}
+
+.payment li {
+	float: left;
+	width: 25%;
+}
+
+.payment li img {
+	width: 35px;
+	border-radius: 3px;
+}
+
+.footer_link {
+	width: 122px;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.footer_link li a {
+	width: 30px;
+	height: 30px;
+	margin: 0px 5px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.devider {
+	color: #fff;
+	margin-top: 85px;
+}
+
+.copy_right {
+	margin-bottom: 20px;
+}
+
+.copy_right a {
+	text-transform: capitalize;
+	color: #CC9900;
+	font-family: 'Yeseva One', cursive;
+}
+/*=====FOOTER END=====*/
+
+
+
+
+
+
